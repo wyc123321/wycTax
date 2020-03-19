@@ -1,5 +1,6 @@
 import testPanel from './panel.vue'
 import testToast from './toast.vue'
+import testTable from './table.vue'
 let index = {}
 index.install = function (Vue, options) {
   Vue.prototype.$msg = 'Hello I am index.jss'
@@ -13,5 +14,6 @@ index.install = function (Vue, options) {
   }
   Vue.component(testPanel.name, testPanel) // testPanel.name 组件的name属性
   Vue.component(testToast.name, testToast) // testPanel.name 组件的name属性
+   Vue.component(testTable.name, testTable) // testPanel.name 组件的name属性
 }
 export default index
